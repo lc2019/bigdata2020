@@ -1,4 +1,4 @@
-package MapReduce.Demo3_mr.Demo_FileInputFormat;
+package com.jld.MRDemo.Demo3_mr.Demo_FileInputFormat;
 
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.BytesWritable;

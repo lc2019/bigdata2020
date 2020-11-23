@@ -6,7 +6,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
 
-public class flowMap extends Mapper<LongWritable, Text,Text, MapReduce.demo2_flow.serialize.flowBean> {
+public class flowMap extends Mapper<LongWritable, Text,Text, flowBean> {
     Text k =  new Text();
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
@@ -23,7 +23,7 @@ public class flowMap extends Mapper<LongWritable, Text,Text, MapReduce.demo2_flo
         String up = fields[fields.length - 3];
         String down = fields[fields.length - 2];
         //封装对象
-        MapReduce.demo2_flow.serialize.flowBean fb = new MapReduce.demo2_flow.serialize.flowBean(Long.parseLong(up), Long.parseLong(down));
+        flowBean fb = new flowBean(Long.parseLong(up), Long.parseLong(down));
 
 
         //4.写出 手机号为key，bean为对象输出

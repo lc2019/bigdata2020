@@ -1,4 +1,4 @@
-package MapReduce.Demo3_mr.demo2_NLineInputFormat;
+package com.jld.MRDemo.Demo3_mr.demo2_NLineInputFormat;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -30,10 +30,10 @@ public class NLineDriver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
         //6.设置输入输出路径
-        FileInputFormat.setInputPaths(job,new Path("e:/bdinput"));
-        FileOutputFormat.setOutputPath(job,new Path("e:/output"));
+        FileInputFormat.setInputPaths(job,new Path("/Users/mac/nline.txt"));
+        FileOutputFormat.setOutputPath(job,new Path("/Users/mac/mrout/nline"));
 
-        //设置实验NLineInput,不使用默认的切割
+        //设置输入格式NLineInput,不使用默认的切割规则
         job.setInputFormatClass(NLineInputFormat.class);
         //设置每3行一个切片
         NLineInputFormat.setNumLinesPerSplit(job,3);

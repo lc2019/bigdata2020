@@ -25,11 +25,11 @@ public class flowdriver {
 
         //设置mr的输出
         job.setMapOutputKeyClass(Text.class);
-        job.setMapOutputValueClass(MapReduce.demo2_flow.serialize.flowBean.class);
+        job.setMapOutputValueClass(flowBean.class);
 
         //设置最终输出的kv
         job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(MapReduce.demo2_flow.serialize.flowBean.class);
+        job.setOutputValueClass(flowBean.class);
         //设置输入输出
         FileInputFormat.setInputPaths(job,new Path("e:/mr/in6"));
         FileOutputFormat.setOutputPath(job,new Path("e:/mr/out7"));

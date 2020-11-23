@@ -1,4 +1,4 @@
-package MapReduce.Demo3_mr.demo2_NLineInputFormat;
+package com.jld.MRDemo.Demo3_mr.demo2_NLineInputFormat;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;

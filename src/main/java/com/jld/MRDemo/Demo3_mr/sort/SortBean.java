@@ -1,4 +1,4 @@
-package MapReduce.Demo3_mr.sort;
+package com.jld.MRDemo.Demo3_mr.sort;
 
 import org.apache.hadoop.io.WritableComparable;
 

@@ -1,4 +1,4 @@
-package MapReduce.Demo3_mr.Demo_KeyValueTextInputFormat;
+package com.jld.MRDemo.Demo3_mr.Demo_KeyValueTextInputFormat;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
@@ -14,7 +14,7 @@ public class redurce extends Reducer<Text, IntWritable, Text,IntWritable> {
     protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
         int sum = 0;
         for (IntWritable value : values) {
-            sum +=value.get();
+            sum += value.get();
         }
         v.set(sum);
         //写出
