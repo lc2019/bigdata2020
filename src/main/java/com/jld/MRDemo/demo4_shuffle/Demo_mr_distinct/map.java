@@ -1,4 +1,4 @@
-package MapReduce.Demo_mr_distinct;
+package com.jld.MRDemo.demo4_shuffle.Demo_mr_distinct;
 
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.NullWritable;

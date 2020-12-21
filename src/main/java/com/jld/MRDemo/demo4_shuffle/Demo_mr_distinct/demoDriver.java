@@ -1,5 +1,7 @@
 package MapReduce.Demo_mr_distinct;
 
+import com.jld.MRDemo.demo4_shuffle.Demo_TopN.reduce;
+import com.jld.MRDemo.demo4_shuffle.Demo_mr_distinct.map;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.NullWritable;
