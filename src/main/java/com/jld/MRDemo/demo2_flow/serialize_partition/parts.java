@@ -14,16 +14,16 @@ public class parts extends Partitioner<Text, flowBean> {
         int part;
         String s = text.toString();
         String proPre = s.substring(0, 3);
-        if ("136".equals(proPre)){
+        if ("135".equals(proPre)){
             part = 0;
-        }else if ("137".equals(proPre)){
+        }else if ("136".equals(proPre)){
             part=1;
-        }else if ("138".equals(proPre)){
+        }else if ("137".equals(proPre)){
             part=2;
-        }else if ("139".equals(proPre)){
-            part=3;
+//        }else if ("139".equals(proPre)){
+//            part=3;
         }else {
-            part=4;
+            part=3;
         }
         return part;
     }

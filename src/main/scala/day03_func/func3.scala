@@ -75,5 +75,16 @@ object func3 {
     f6(() => {
       println("haha 匿名函数")
     })
+
+    def f7(f: (Int, Int) => Int): Int = {
+      f(10, 10)
+    }
+
+    //    println(f7((x: Int, y: Int) => {
+    //      x + y
+    //    }))
+    println(f7((x, y) => x + y))
+
+    println(f7(_+_))
   }
 }
