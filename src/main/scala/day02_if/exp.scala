@@ -19,5 +19,17 @@ object exp {
       "abc"
     }
     unit
+
+    val a = 40
+    val b = 20
+    val c = 30
+    var max = 0
+    if (a >= b) {
+      max = if (a >= c) a else c
+
+    } else {
+      max = if (b >= c) b else c
+    }
+    println(max)
   }
 }

@@ -11,7 +11,6 @@ object cogroup {
     //conf对象
     val wcConf: SparkConf = new SparkConf().setAppName("wc").setMaster("local[*]")
 
-
     //创建上下文对象
     val sc = new SparkContext(wcConf)
     // TODO: 2个分区 
@@ -22,5 +21,4 @@ object cogroup {
     val ardd: RDD[(Int, Int)] = sc.makeRDD(Array((4, 4), (2, 5), (3, 6)))
     irdd.cogroup(ardd).collect().foreach(println)
   }
-
 }

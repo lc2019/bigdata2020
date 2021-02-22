@@ -14,7 +14,7 @@ object spark_demo {
     val sc = new SparkContext(wcConf)
 
     //读取文件,一行一行的读取 从文件创建rdd
-    val lines: RDD[String] = sc.textFile("in")
+    val lines: RDD[String] = sc.textFile("hdfs://hadoop101:9000/test1")
 
     //分解
     val tp: RDD[String] = lines.flatMap(_.split(" "))
